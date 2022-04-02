@@ -6,9 +6,7 @@
 
 
 section {
-  height: 60vh;
-  /* background-image: linear-gradient(to bottom, #cebb0d, rgb(169, 41, 255)); */
-  
+  height: 60vh;  
   font-family: 'Allerta Stencil';
   font-size: 22px;
 }
