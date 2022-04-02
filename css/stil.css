@@ -1,0 +1,78 @@
+#logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: fill;
+  background-position: center;
+}
+
+.fundal{
+  background-image: url(../img/blue.jpg);
+  background-size: cover;
+}
+
+#circle {
+  width: 130px;
+  height: 130px;
+  line-height: 130px;
+  border-radius: 130px;
+  background: linear-gradient(
+    to right,
+    #253436 50%,
+    #245663 50%
+  );
+  background-position: right bottom;
+  background-size: 200% 100%;
+  margin: 100px auto;
+  border: 2px solid whitesmoke;
+  transition: all 1s ease;
+}
+
+
+#textInCircle {
+  display: block;
+  text-align: center;
+  line-height: 130px;
+}
+
+#circle:hover {
+  background-position: left bottom;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388; 
+}
+
+.carousel-item img {
+  height: 300px;
+}
+
+.text-center {
+  margin: 100px 0 100px 0;
+}
+
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition-duration: 0.6s;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-right {
+  opacity: 0;
+}
+
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-prev {
+  transform: translateX(0);
+  transform: translate3d(0, 0, 0);
+}

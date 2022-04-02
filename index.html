@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roshambo battle</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF"
+      crossorigin="anonymous"
+    />
+    <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+    <link rel="stylesheet" href="css/stil.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="fundal">
+      <nav class="navbar sticky-top navbar-fade navbar-expand-lg navbar-light ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              id="logo"
+              src="img/roshambo.jpg"
+              alt="Missing logo!"
+              width="100"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item ">
+                <a class="link-color nav-link " aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Games</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+            </ul>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              id="loginButton"
+              class="btn btn-primary ms-auto"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Login
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="text-center">
+        <h1 class="title">Let the Battles Begin !</h1>
+      </div>
+      <!-- Carousel -->
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="img/banner1.png"
+              class="d-block w-100"
+              alt="Missing banner!"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/banner2.png"
+              class="d-block w-100"
+              alt="Missing banner!"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/banner0.png"
+              class="d-block w-100"
+              alt="Missing banner!"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- TAbela scor -->
+      <section class="game">
+        <div class="score">
+          <div class="player-score">
+            <h2>Player</h2>
+            <p>0</p>
+          </div>
+          <div class="computer-score">
+            <h2>Computer</h2>
+            <p>0</p>
+          </div>
+        </div>
+        <!-- Buton Let's play -->
+        <div class="intro">
+          <h1>Rock Paper and Scissors</h1>
+          <button id="circle"><p id="textInCircle">Let's Play</p></button>
+        </div>
+        <!-- Joc -->
+        <div class="match fadeOut">
+          <h2 class="winner">Choose an option</h2>
+          <div class="hands">
+            <img
+              class="player-hand"
+              src="./RockPaperScissors/assets/rock.png"
+              alt=""
+            />
+            <img
+              class="computer-hand"
+              src="./RockPaperScissors/assets/rock.png"
+              alt=""
+            />
+          </div>
+          <div class="options">
+            <button class="rock">rock</button>
+            <button class="paper">paper</button>
+            <button class="scissors">scissors</button>
+          </div>
+        </div>
+      </section>
+
+      <footer class="container-fluid bg-dark">
+        <div class="container pt-3 text-white d-flex justify-content-around">
+          <p class="col-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+            aperiam, ipsam molestiae temporibus quae qui placeat recusandae eos
+            cumque voluptates, dolore perferendis tenetur quia odit dignissimos
+            quisquam rerum corrupti aliquam.
+          </p>
+          <p class="col-3">
+            Itaque impedit facere eveniet magnam alias neque consequatur saepe
+            porro? Voluptatum harum deserunt minima distinctio nostrum saepe
+            molestias non cupiditate. Ullam placeat vitae nulla veniam
+            consequatur labore earum asperiores architecto.
+          </p>
+          <p class="col-3">
+            Voluptatum aliquam iusto soluta qui sed, veritatis quae maxime
+            incidunt placeat enim ad voluptatibus dolore. Sint porro ipsam
+            deleniti veniam! Rerum, vitae! Soluta labore eos nulla repudiandae
+            dolor dolore magni.
+          </p>
+        </div>
+      </footer>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Login form</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
+                  <div id="emailHelp" class="form-text">
+                    We'll never share your email with anyone else.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                  />
+                </div>
+                <div class="mb-3 form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="exampleCheck1"
+                  />
+                  <label class="form-check-label" for="exampleCheck1"
+                    >Send me a newsletter</label
+                  >
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./RockPaperScissors/app.js"></script>
+  </body>
+</html>
