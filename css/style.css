@@ -6,14 +6,20 @@
 
 
 section {
-  height: 600px;  
+  height: 900px;  
   font-family: 'Allerta Stencil';
   font-size: 22px;
 }
 
+
 .title {
-  font-family: 'Allerta Stencil';
+  /* font-family: 'Allerta Stencil';
+  color: white; */
   color: white;
+  font-size: 85px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  font-family: "Allerta Stencil";
 }
 
 .navbar-fade{
@@ -27,10 +33,12 @@ nav .navbar-nav li a{
 
 .score {
   color: rgb(224, 224, 224);
-  height: 20vh;
+  height: 50vh;
   display: flex;
+  /* float: none; */
   justify-content: space-around;
   align-items: center;
+
 }
 .score h2 {
   font-size: 30px;
@@ -43,7 +51,7 @@ nav .navbar-nav li a{
 
 .intro {
   color: rgb(224, 224, 224);
-  height: 30vh;
+  height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,6 +60,7 @@ nav .navbar-nav li a{
 }
 
 .intro h1 {
+  padding-top: 150px;
   font-size: 50px;
 }
 .intro button,
@@ -68,8 +77,9 @@ nav .navbar-nav li a{
 }
 
 .match {
+  height: 100px;
   position: absolute;
-  top: 900px;
+  top: 950px;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: opacity 0.5s ease 0.5s;
@@ -78,6 +88,7 @@ nav .navbar-nav li a{
   color: rgb(224, 224, 224);
   text-align: center;
   font-size: 50px;
+  margin: 110px;
 }
 
 .hands,
