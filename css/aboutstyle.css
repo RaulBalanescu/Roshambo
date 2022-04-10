@@ -2,13 +2,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-   
+    background-color: #161922;
 }
 
 .about{
     width: 100%;
     height: 100vh;
-    background-color: #161922;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,7 +33,27 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around ;
+    text-shadow: 1px 1px 2px #427388;
+}
 
+.content button {
+        background-color:#1abc9c ;
+        color: black;
+        border: 2px solid transparent;
+        text-decoration: none;
+        padding: 10px 30px;
+        border-radius: 30px;
+        font-size: 18px;
+        font-weight: bold;
+}
+
+.content button:hover {
+    transform: scale(1.2);
+    background-color: transparent;
+    color: aliceblue;
+    border:1px solid #1abc9c;
+    transition: .4s;
+    cursor: pointer;
 }
 
 .text h1{
@@ -61,33 +80,10 @@
     margin-bottom: 45px;
 }
 
-button {
-    /* width: 100px;
-    background: #1abc9c;
-    border-radius: 7px;
-    padding: 6px 6px;;
-    font-family: "Allerta Stencil";
-    font-weight: bold;
-    float: right;
-    cursor: pointer; */
- background-color:#1abc9c ;
- color: black;
- border: 2px solid transparent;
- text-decoration: none;
- padding: 10px 30px;
- border-radius: 30px;
- font-size: 18px;
- font-weight: bold;
-  }
 
-  button:hover{
-      transform: scale(1.2);
-      background-color: transparent;
-      color: aliceblue;
-      border:1px solid #1abc9c;
-      transition: .4s;
-      cursor: pointer;
-  }
+
+
+
 
   @media screen and (max-width:650px){
       .about{
